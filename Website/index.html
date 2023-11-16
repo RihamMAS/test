@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+  <link rel="icon" href="../logo.png" type="image/x-icon">
+  
+
+  <style>
+    .about-ecotourism {
+      transform: translateX(400%);
+      transition: transform 0.4s ease;
+    }
+
+    .about-ecotourism:nth-of-type(even) {
+      transition: translateY(-400%);
+    }
+
+    .about-ecotourism.show {
+      transform: translateX(0);
+    }
+
+    .main-container {
+      transform: translateX(400%);
+      transition: transform 0.4s ease;
+    }
+
+    .main-container:nth-of-type(even) {
+      transition: translateY(-400%);
+    }
+
+    .main-container.show {
+      transform: translateX(0);
+    }
+
+    .wrapper {
+      transform: translateX(400%);
+      transition: transform 0.4s ease;
+    }
+
+    .wrapper:nth-of-type(even) {
+      transition: translateY(-400%);
+    }
+
+    .wrapper.show {
+      transform: translateX(0);
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <!-- Navbar start -->
+  <div id="starnav">
+
+    <ul>
+
+      <li><a href="D:\Riham\ITI\Project\ITI Project\Website\index.html">Home</a></li>
+      <li><a href="">About</a>
+        <ul class="uldropdown">
+          <li><a href="D:\Riham\ITI\Project\ITI Project\Website\about the project\project.html">The project</a></li>
+          <li><a href="D:\Riham\ITI\Project\ITI Project\Website\about the team\team.html">The team</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="D:\Riham\ITI\Project\ITI Project\Website\project_final_ filter\template.html">Destination</a></li>
+      <li><a href="D:\Riham\ITI\Project\ITI Project\Website\Statistics\statistics.html">Statistics</a>
+      </li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+
+  </div>
+
+  <!-- Navbar end -->
+
+
+  <!-- Parallex start -->
+
+  <section class="parallax-layer">
+    <img src="../backs.png" alt="" id="b">
+    <img src="../backf.png" alt="" id="front">
+    <h2 id="text">Kemet</h2>
+    <img src="../backm.png" alt="" id="bt">
+    <img src="../backb.png" alt="" id="bl">
+  </section>
+
+  <!-- Parallex end -->
+
+  <!-- Description start -->
+
+  <div class="sec" id="sec">
+
+    <div class="about-ecotourism">
+      <a href="https://www.facebook.com/?locale=ar_AR"> </a>
+      <div class="about-ecotourism-tex">
+
+        <h2 class="">Ecotourism</h2>
+
+        <div class="ecop">
+          <p class="">Ecotourism in Egypt offers a sustainable and responsible way to explore diverse landscapes, from
+            the Sahara desert to the Red Sea ecosystems. You can enjoy activities like bird watching, marine reserve
+            exploration, and desert trekking, all while supporting conservation efforts and local communities. This
+            eco-friendly approach highlights Egypt's natural beauty, culture, and history while minimizing its
+            environmental impact. </p>
+          <br>
+          <div class="more">
+            <a href="D:\Riham\ITI\Project\ITI Project\Website\about the project\project.html" class="destbtn">
+              <img src="../next.png" alt="" id="getb"> </a>
+            <p class="ecog">Get More</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+          
+    </div>
+
+
+
+
+    <!-- Description end -->
+
+    <!-- Destination start -->
+
+    <div class="main-container">
+      <h2 class="">Destination</h2>
+      <div class="video-container">
+        <video src="../prjecovideo.mp4" autoplay muted loop></video>
+        <div class="hover-text active">
+
+        </div>
+      </div>
+      <div id="g" class="box">
+        <a href="D:\Riham\ITI\Project\ITI Project\Website\project_final_ filter\template.html" class="destbtn">
+          <img src="../next.png" alt="" id="getb"> </a>
+        <p id="get">Get More</p>
+      </div>
+    </div>
+
+
+
+
+    <!-- Destination end -->
+
+    <!-- Event Start -->
+
+    <div class="wrapper">
+
+      <h2> Events <br> Happening Now</h2>
+      <ul class="carousel">
+        <li class="card">
+          <div class="img"><img src="../wadihitanstarsc.png" alt="img" draggable="false"></div>
+          <h2>Milky way </h2>
+          <span>ًWadi Al Hitan</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="../yasminc.png" alt="img" draggable="false"></div>
+          <h2>Jasmin Harvest</h2>
+          <span>Tanta</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="../pridec.png" alt="img" draggable="false"></div>
+          <h2>Custom Pottery</h2>
+          <span>Cairo</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="../sandc.png" alt="img" draggable="false"></div>
+          <h2>Sand Boarding</h2>
+          <span>Fayoum</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="../birdsc.png" alt="img" draggable="false"></div>
+          <h2>Birds Immigration</h2>
+          <span>Port Said</span>
+        </li>
+
+      </ul>
+      <i id="left" class="fa-solid fa-angle-left"> <img src="../before.png" alt=""> </i>
+      <i id="right" class="fa-solid fa-angle-right"> <img src="../next.png" alt=""> </i>
+          
+    </div>
+
+    <!-- Event end -->
+
+
+    <!-- Contact start -->
+
+    <div class="line">
+
+    </div>
+
+    <div id="Contact">
+
+      <div class="social">
+        <div id="logo">
+          <div class="logos">
+            <img src="../logo.png" alt="" id="logos">
+            <h1> Kemet </h1>
+          </div>
+          <div>
+            <p> Phone: +201000010000 </p>
+            <p> Email: Kemet@gmail.com </p>
+          </div>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/?locale=ar_AR" id="icon"> <img src="../facebook.png" alt="" id="icon">
+          </a>
+          <a href="https://www.instagram.com/" id="icon"> <img src="../instagram.png" alt="" id="icon"> </a>
+          <a href="https://www.youtube.com/" id="icon"> <img src="../youtube.png" alt="" id="icon"> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact end -->
+
+    <!-- Chat start -->
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+      </button>
+
+      <div class="content">
+        <div class="full-chat-block">
+          <!-- Message Container -->
+          <div class="outer-container">
+            <div class="chat-container">
+              <!-- Messages -->
+              <div id="chatbox">
+                <h5 id="chat-timestamp"></h5>
+                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+              </div>
+
+              <!-- User input box -->
+              <div class="chat-bar-input-block">
+                <div id="userInput">
+                  <input id="textInput" class="input-box" type="text" name="msg"
+                    placeholder="Tap 'Enter' to send a message">
+                  <p></p>
+                </div>
+
+                <div class="chat-bar-icons">
+                  <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart" onclick="heartButton()"> ❤ </i>
+                  <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"> 🪁 </i>
+                </div>
+              </div>
+
+              <div id="chat-bar-bottom">
+                <p></p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="D:\Riham\ITI\Project\ITI Project\Website\chat\static\scripts\responses.js"></script>
+    <script src="D:\Riham\ITI\Project\ITI Project\Website\chat\static\scripts\chat.js"></script>
+
+
+
+
+    <!-- Chat end -->
+
+    <script src="./script.js"></script>
+
+    <script>
+
+
+      const about = document.querySelectorAll(".about-ecotourism");
+      window.addEventListener("scroll", checkabout);
+
+      checkabout();
+
+      function checkabout() {
+        const triggerbottom = window.innerHeight / 5 * 4;
+        Array.from(about).forEach(box => {
+          const boxTop = box.getBoundingClientRect().top;
+          if (boxTop < triggerbottom) {
+            box.classList.add("show");
+          } else {
+            box.classList.remove("show");
+          }
+        });
+      }
+
+      const container = document.querySelectorAll(".main-container");
+      window.addEventListener("scroll", checkcontainer);
+
+      checkcontainer();
+
+      function checkcontainer() {
+        const triggerbottom = window.innerHeight / 5 * 4;
+        Array.from(container).forEach(box => {
+          const boxTop = box.getBoundingClientRect().top;
+          if (boxTop < triggerbottom) {
+            box.classList.add("show");
+          } else {
+            box.classList.remove("show");
+          }
+        });
+      }
+
+      const wrappers = document.querySelectorAll(".wrapper");
+      window.addEventListener("scroll", checkwrappers);
+
+      checkwrappers();
+
+      function checkwrappers() {
+        const triggerBottom = window.innerHeight / 5 * 4;
+        wrappers.forEach(wrapper => {
+          const boxTop = wrapper.getBoundingClientRect().top;
+          if (boxTop < triggerBottom) {
+            wrapper.classList.add("show");
+          } else {
+            wrapper.classList.remove("show");
+          }
+        });
+      }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

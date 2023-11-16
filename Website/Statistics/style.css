@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+*::-webkit-scrollbar{
+  height: .5rem;
+  width:.5rem;
+}
+
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color:#000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 110vh;
+  width: 100%;
+  background-color: #353535;
+
+}
+
+/* navbar start */
+
+.header{
+  position: absolute;
+  top: 0; left: 0; right: 0;
+}
+
+.navbar {
+margin-top: 2%;
+/* margin-right: 4%; */
+
+}
+ #logos{
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+ }
+
+#starnav h3{
+  text-align: match-parent;
+  font-size: 1.3rem;
+  color: #fff;
+
+}
+
+ul{
+
+  margin-top: 0;
+  margin-left: 55%;
+  list-style: none;
+  color: #f9f9f9;
+ 
+}
+
+ul li{
+  display: inline-block;
+  position: relative;
+  text-align: left;
+
+}
+ul li a{
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+ul li ul.uldropdown li{
+  display: block;
+}
+
+ul li ul.uldropdown{
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  margin-left: 0;
+}
+ul li a:hover{
+  background:#c79230da;
+  width: 100%;
+}
+ul li:hover ul.uldropdown{
+  display:block;
+}
+
+#starnav {
+
+  background-color: #C79230;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+/* navbar end */
+
+
+/* Dashboard start */
+.area-container {
+  height: 80vh;
+  width: 100%;
+  color:#fff;
+  background-color: #353535;
+  z-index: 1000;
+
+}
+
+.area-container h1{
+margin-left: 1%;
+}
+
+.area-container h3{
+  margin-left: 1%;
+
+  }
+
+.dashboards {
+  height: 100%;
+  width: 100%;
+}
+/* ashboard end */
+
+/* Contact start */
+
+
+#Contact{
+  height: 20vh;
+  width: 100%;
+  position: relative;  
+  background: #C79230;
+  /* text-align: left; */
+  color: #000000;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+
+}
+
+
+.social{
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+ 
+
+}
+
+#logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  gap: 2rem;
+  color: #fff;
+  
+  
+}
+
+
+ 
+.logos {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1;
+}
+
+
+
+#logo p {
+ font-size: 1.25rem;
+ color: #000000;
+ 
+}
+
+#icon {
+
+width: 3rem;
+height: 3rem;
+text-decoration: none;
+
+
+
+
+}
+
+/* Contact end */

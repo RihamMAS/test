@@ -1,0 +1,716 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <title>Feature widget in a side panel | Sample | ArcGIS Maps SDK for JavaScript 4.28</title>
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+    <link rel="icon" href="../logo.png" type="image/x-icon">
+    <script src="https://js.arcgis.com/4.28/"></script>
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #viewDiv {
+            float: left;
+            padding: 0;
+            margin: 0;
+            height: 90vh;
+            width: 100%;
+        }
+
+        #feature-node {
+            float: left;
+            width: 35%;
+            height: 100%;
+            padding: 1em;
+            overflow: scroll;
+            max-height: 100%;
+        }
+
+        #broute {
+
+            width: 5rem;
+            height: 2rem;
+            background-color: #ffffff;
+            border: 0px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px -5px rgba(56, 56, 56, 0.824);
+
+        }
+
+        #broute:hover {
+            width: 5rem;
+            height: 2rem;
+            background-color: #e9e9e9
+        }
+
+        #broute:hover::after {
+            content: "Click two points on the map";
+            position: absolute;
+            top: -20vh;
+            left: 800px;
+            transform: translateX(-50%);
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #broute:hover::after {
+            opacity: 1;
+        }
+
+        #bfood {
+
+            width: 5rem;
+            height: 2rem;
+            background-color: #ffffff;
+            border: 0px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px -5px rgba(56, 56, 56, 0.824);
+        }
+
+        #bfood:hover {
+            width: 5rem;
+            height: 2rem;
+            background-color: #e9e9e9
+        }
+
+        #bfood:hover::after {
+            content: "Click a point on the map";
+            position: absolute;
+            top: -20vh;
+            left: 800px;
+            transform: translateX(-50%);
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #bfood:hover::after {
+            opacity: 1;
+        }
+    </style>
+
+<body>
+
+
+
+    <!-- Navbar start -->
+    <div id="starnav">
+
+        <ul>
+
+            <li><a href="D:\Riham\ITI\Project\ITI Project\Website\index.html">Home</a></li>
+            <li><a href="">About</a>
+                <ul class="uldropdown">
+                    <li><a href="D:\Riham\ITI\Project\ITI Project\Website\about the project\project.html">The
+                            project</a></li>
+                    <li><a href="D:\Riham\ITI\Project\ITI Project\Website\about the team\team.html">The team</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="D:\Riham\ITI\Project\ITI Project\Website\project_final_ filter\template.html">Destination</a>
+            </li>
+            <li><a href="D:\Riham\ITI\Project\ITI Project\Website\Statistics\statistics.html">Statistics</a>
+            </li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Navbar end -->
+
+    <!-- start box -->
+    <!-- <div id="box"></div> -->
+
+    <div id="boxright">
+
+
+        <!-- Button route -->
+        <button id="broute"> Get Route </button>
+        <button id="bfood"> Restaurants </button>
+
+
+        <div class="list">
+            <h3> Filter by </h3>
+        </div>
+
+        <div class="list">
+            <h4> Popular season </h4>
+            <select class="custom-select" name="" id="cntrDdl">
+                <option value="All">All</option>
+            </select>
+        </div>
+
+
+        <div class="list">
+            <h4> Activities available </h4>
+            <div id="checContainer">
+            </div>
+        </div>
+
+
+        <div class="list">
+            <h4> Guest rating </h4>
+            <div id="radioContainer">
+            </div>
+        </div>
+
+
+        <!-- test templte code end  -->
+
+    </div>
+
+    <!-- end box -->
+
+
+
+    <div id="viewDiv"></div>
+
+    <!-- <div id="area"> </div> -->
+
+
+
+
+
+    <!-- js link -->
+    <script src="script.js">
+
+
+
+
+    </script>
+
+
+    <!-- Contact start -->
+
+    <div class="line">
+
+    </div>
+
+    <div id="Contact">
+
+        <div class="social">
+            <div id="logo">
+                <div class="logos">
+                    <img src="../about the team/logo.png" alt="" id="logos">
+                    <h1> Kemet </h1>
+                </div>
+                <div>
+                    <p> Phone: +201000010000 </p>
+                    <p> Email: Kemet@gmail.com </p>
+                </div>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/?locale=ar_AR" id="icon"> <img src="../about the team/facebook.png"
+                        alt="" id="icon"> </a>
+                <a href="https://www.instagram.com/" id="icon"> <img src="../about the team/instagram.png" alt=""
+                        id="icon"> </a>
+                <a href="https://www.youtube.com/" id="icon"> <img src="../about the team/youtube.png" alt="" id="icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact end -->
+
+
+
+</body>
+
+
+<script>
+    var ex1 = null;
+    var ex2 = null;
+    var ex3 = null;
+
+    require([
+        "esri/Map",
+        "esri/layers/FeatureLayer",
+        "esri/views/SceneView",
+        "esri/config",
+        "esri/request",
+        "esri/widgets/Popup",
+        "esri/PopupTemplate",
+        "esri/widgets/Locate",
+        "esri/rest/locator",
+        "esri/Graphic",
+        "esri/rest/route",
+        "esri/rest/support/RouteParameters",
+        "esri/rest/support/FeatureSet",
+        "esri/renderers/UniqueValueRenderer",
+    ], (
+        Map,
+        FeatureLayer,
+        SceneView,
+        esriConfig,
+        esriRequest,
+        Popup,
+        PopupTemplate,
+        Locate,
+        locator,
+        Graphic,
+        route,
+        RouteParameters,
+        FeatureSet,
+        UniqueValueRenderer
+    ) => {
+        // Create PopupTemplate
+        const thePopupTemplate = new PopupTemplate({
+            title: "{name}",
+            content: `
+      <div style="">
+        <img src="{image}" alt="">
+        <h2> Description </h2>
+        <h4> {Descrip} </h4>
+        <h2> Activities </h2>
+        <h4> {Activity_1} </h4>
+        <h4> {Activity_2} </h4>
+        <h4> {Activity_3} </h4>
+      </div>
+    `,
+        });
+
+
+        // API Key
+
+        esriConfig.apiKey = "AAPKc832ad4e1c8443dda5be6db64118e1874y1L20cavTkedf7FKgC1wrnjIIaVmc0jp6TBpU8YyHFzqgxEu_e-4zEOQ2_0ZTUU"
+
+        // Create FeatureLayer
+        const layer = new FeatureLayer({
+            url: "https://services6.arcgis.com/BTCEDKw3L1B8T0bt/arcgis/rest/services/protected_Scene_WFL1/FeatureServer",
+            popupTemplate: thePopupTemplate,
+        });
+
+        // Create Map
+        const map = new Map({
+            basemap: "gray-vector",
+            ground: "world-elevation",
+            layers: [layer],
+        });
+
+        // Create SceneView
+        const view = new SceneView({
+            container: "viewDiv",
+            center: [31, 30],
+            zoom: 5,
+            map: map,
+            camera: {
+                position: {
+                    spatialReference: {
+                        latestWkid: 3857,
+                        wkid: 102100,
+                    },
+                    x: 3262192.883555487,
+                    y: 2815246.351026253,
+                    z: 6000000.728082635,
+                },
+                heading: 0,
+                tilt: 0.49,
+            },
+        });
+
+        // Configure Popup in the view
+        view.popup.dockEnabled = true;
+        view.popup.dockOptions = {
+            buttonEnabled: true,
+            breakpoint: false,
+        };
+        view.popup.visibleElements = {
+            closeButton: false,
+        };
+
+        // Add layer to the map
+        map.add(layer);
+
+
+        // Query 
+        reqUrl = "https://services6.arcgis.com/BTCEDKw3L1B8T0bt/ArcGIS/rest/services/protected_Scene_WFL1/FeatureServer/0/query"
+
+
+        var reqOpt = {
+            query: {
+                where: "Shape__Length > 1",
+                outFields: ['Activites'],
+                f: "json"
+            }
+
+        }
+
+        var reqOpt2 = {
+            query: {
+                where: "Shape__Length > 1",
+                outFields: ['Season'],
+                f: "json"
+            }
+
+        }
+
+
+        var reqOpt3 = {
+            query: {
+                where: "Shape__Length > 1",
+                outFields: ['rate'],
+                f: "json"
+            }
+
+        }
+
+        // Filter
+        var ddl = document.getElementById("cntrDdl");
+        var checContainer = document.getElementById("checContainer");
+        var radioContainer = document.getElementById("radioContainer");
+
+        var filterExpressions = {
+            season: null,
+            activities: null,
+            rate: null,
+        };
+
+        function applyFilter() {
+            var filters = [];
+
+            for (var key in filterExpressions) {
+                if (filterExpressions[key] !== null) {
+                    filters.push(filterExpressions[key]);
+                }
+            }
+
+            if (filters.length === 0) {
+                layer.definitionExpression = "";
+            } else {
+                layer.definitionExpression = filters.join(" AND ");
+            }
+
+            layer.queryExtent().then(function (e) {
+                view.goTo(e.extent, { duration: 1000 });
+            });
+
+        }
+
+
+        function createDropdownFilter() {
+            esriRequest(reqUrl, reqOpt2).then(function (result) {
+                var cnt = ["All"];
+
+                result.data.features.forEach(function (feature) {
+                    var season = feature.attributes.Season;
+                    if (!cnt.includes(season)) {
+                        cnt.push(season);
+                        var opt = document.createElement("option");
+                        opt.value = season;
+                        opt.innerHTML = season;
+                        ddl.appendChild(opt);
+                    }
+                });
+
+                ddl.addEventListener("change", function () {
+                    filterExpressions.season = this.value === "All" ? null : "Season = '" + this.value + "'";
+                    applyFilter();
+                });
+            });
+        }
+
+
+        function createCheckboxFilter() {
+            esriRequest(reqUrl, reqOpt).then(function (result) {
+                var features = result.data.features;
+
+                features.forEach(function (feature) {
+                    var activity = feature.attributes.Activites;
+
+                    if (!document.querySelector(`input[name="activities"][value="${activity}"]`)) {
+                        var checkbox = document.createElement("input");
+                        checkbox.type = "checkbox";
+                        checkbox.name = "activities";
+                        checkbox.value = activity;
+
+                        var label = document.createElement("label");
+                        label.innerHTML = activity;
+
+                        var mydiv = document.createElement("div");
+                        mydiv.appendChild(label);
+                        mydiv.appendChild(checkbox);
+                        checContainer.appendChild(mydiv);
+
+                        checkbox.addEventListener("change", function () {
+                            filterExpressions.activities = this.checked ? `Activites = '${this.value}'` : null;
+                            applyFilter();
+                        });
+                    }
+                });
+            });
+        }
+
+
+        function createRadioFilter() {
+            esriRequest(reqUrl, reqOpt3).then(function (result) {
+                var features = result.data.features;
+
+                features.forEach(function (feature) {
+                    var rate = feature.attributes.rate;
+
+                    if (rate !== null && rate !== undefined) {
+                        if (!document.querySelector(`input[name="rateOption"][value="${rate}"]`)) {
+                            var input = document.createElement("input");
+                            input.type = "radio";
+                            input.name = "rateOption";
+                            input.value = rate;
+
+                            var label = document.createElement("label");
+                            label.innerHTML = rate;
+
+                            radioContainer.appendChild(input);
+                            radioContainer.appendChild(label);
+
+                            input.addEventListener("change", function () {
+                                filterExpressions.rate = this.checked ? `rate = '${this.value}'` : null;
+                                applyFilter();
+                            });
+                        }
+                    }
+                });
+            });
+        }
+
+
+
+        createDropdownFilter();
+        createCheckboxFilter();
+        createRadioFilter();
+
+
+        // Network
+
+        // Locate
+
+        view.when(function () {
+            console.log("View is ready");
+            // Add Locate widget here
+            view.ui.add(mylocation, "bottom-left");
+        });
+
+        // ...
+
+        var mylocation = new Locate({
+            view: view,
+            graphic: new Graphic({
+                symbol: { type: "simple-marker" }
+                
+            })
+        });
+
+        console.log("Locate widget created");
+
+
+
+
+
+
+        // Find Restaurants
+
+        var bfood = document.getElementById("bfood")
+        bfood.addEventListener("click", function () {
+
+
+
+            function findplaces(pt) {
+
+                var locurl = "http://geocode-api.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+                var locparams = {
+                    categories: ["Food"],
+                    location: pt,
+                    maxLocations: 10,
+                    outFields: ["*"],
+                }
+
+
+                locator.addressToLocations(locurl, locparams).then(function (res) {
+                    console.log(res)
+
+                    for (let x = 0; x < res.length; x++) {
+                        var myGraphic = new Graphic({
+                            attributes: res[x].attributes,
+                            geometry: res[x].location,
+                            symbol: {
+                                type: "simple-marker",
+                                style: "circle",
+                                color: "red",
+                                size: 5
+                            },
+                            popupTemplate: {
+                                title: "{PlaceName}",
+                                content: "{Place_addr}"
+                            }
+                        })
+
+                        view.graphics.add(myGraphic)
+
+                    }
+                })
+            }
+
+
+            view.on("click", function (e) {
+                console.log(e)
+
+                findplaces(e.mapPoint)
+
+                view.goTo({
+                    center: [e.mapPoint.longitude, e.mapPoint.latitude],
+                    zoom: 9
+                }, { duration: 4000 })
+
+            })
+
+        });
+
+
+
+
+        // Route
+
+
+        var broute = document.getElementById("broute")
+        broute.addEventListener("click", function () {
+
+            var routeUrl = "https://route-api.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World"
+            var routeParams = new RouteParameters({
+                directionsLanguage: "en",
+                returnDirections: true,
+                stops: new FeatureSet(),
+
+                elevationInfo: {
+                    mode: "relative-to-ground",
+                    offset: 10
+                },
+
+            })
+            map.add(routeUrl);
+
+
+
+
+            function getRoute() {
+                route.solve(routeUrl, routeParams).then(function (routeResult) {
+                    console.log(routeResult);
+
+
+                    if (view.zoom >= 9) {
+                        var routeLine = routeResult.routeResults[0].route.clone(); // Clone the route geometry
+                        routeLine.symbol = {
+                            type: "line-3d",
+                            symbolLayers: [{
+                                type: "path",
+                                profile: "circle",
+                                cap: "round",
+                                join: "miter",
+                                width: 200,
+                                height: 200,
+                                material: { color: [255, 0, 16] },
+                                profileRotation: "all",
+                                elevationInfo: {
+                                    mode: "relative-to-ground",
+                                    offset: 10
+                                },
+                            }],
+
+                        };
+
+
+                    } else {
+                        var routeLine = routeResult.routeResults[0].route.clone(); // Clone the route geometry
+                        routeLine.symbol = {
+                            type: "line-3d",
+                            symbolLayers: [{
+                                type: "path",
+                                profile: "circle",
+                                cap: "round",
+                                join: "miter",
+                                width: 1000,
+                                height: 1000,
+                                material: { color: [255, 0, 16] },
+                                profileRotation: "all",
+                                elevationInfo: {
+                                    mode: "relative-to-ground",
+                                    offset: 10
+                                },
+                            }],
+
+
+                        };
+
+
+                    }
+
+                    view.graphics.add(routeLine);
+                });
+
+
+            }
+
+
+            function addStop(pt) {
+                var myGraphic = new Graphic({
+                    geometry: pt,
+                    symbol: {
+                        type: "simple-marker",
+                        style: "circle",
+                        color: "red",
+                        size: 10
+                    },
+                })
+                view.graphics.add(myGraphic)
+
+                routeParams.stops.features.push(myGraphic)
+
+                if (routeParams.stops.features.length == 2)
+                    getRoute()
+
+            }
+
+
+            view.on("click", function (e) {
+                console.log(e.mapPoint)
+                // findPlaces(e.mapPoint)
+                addStop(e.mapPoint)
+
+            })
+
+        })
+
+
+
+
+    });
+
+
+
+
+
+
+
+</script>
+</head>
+
+
+
+</html>

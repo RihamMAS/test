@@ -1,0 +1,994 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: ; */
+    scroll-behavior: smooth;
+}
+
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+*::-webkit-scrollbar{
+  height: .5rem;
+  width:.5rem;
+}
+
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color:#000000;
+}
+
+body{
+min-height: 100vh;
+overflow-x: hidden;
+background: linear-gradient(rgb(17, 24, 41), #43325e);
+}
+
+
+/* navbar start */
+
+.header{
+  position: absolute;
+  top: 0; left: 0; right: 0;
+}
+
+.navbar {
+margin-top: 2%;
+margin-right: 4%;
+
+}
+ #logos{
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+ }
+
+
+
+ul{
+
+  margin-top: 0;
+  margin-left: 55%;
+  list-style: none;
+  color: #f9f9f9;
+ 
+}
+
+ul li{
+  display: inline-block;
+  position: relative;
+
+}
+ul li a{
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-align: match-parent;
+  font-size: 1.3rem;
+  color: #f9f9f9;
+}
+
+ul li ul.uldropdown li{
+  display: block;
+}
+
+ul li ul.uldropdown{
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  margin-left: 0;
+}
+ul li a:hover{
+  background:#c79230da;
+}
+ul li:hover ul.uldropdown{
+  display:block;
+}
+
+#starnav {
+
+background-image: url(../backs.png);
+display: flex;
+align-items: center;
+justify-content: space-between;
+  
+}
+
+/* navbar end */
+
+
+/* Parallex start */
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+section::before{
+  content: '';  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#C79230, transparent );
+  z-index: 1000;
+}
+
+
+section img{
+  position: absolute;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+#b{
+    width: 100%;
+    height: 150%;
+ 
+}
+
+#front{
+ z-index: 10; 
+    
+
+}
+
+#text{
+position: absolute;
+color: #fff;
+white-space: nowrap;
+font-size: 7.5vw;
+z-index: 9;
+transform: translateY(80px);
+mix-blend-mode: screen;
+overflow: hidden;
+}
+
+/* Parallex end */
+
+
+/* Descrition start */
+
+.sec{
+  height: 285vh;
+  position: relative;  
+  padding: 10%;
+  background: #C79230;
+  text-align: left;
+  /* align-items: center; */
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color:#000000;
+    display: flex;
+}
+
+.sec p{
+    font-size: 1em;
+    color:#000000;
+    text-align: justify;
+    justify-content: center;
+}
+
+.about-ecotourism{
+margin-top: -3%;
+width: 100%;
+height: 50vh;
+/* display: flex;
+justify-content: space-between; */
+text-align: left;
+align-items: flex-start;
+/* gap: 3%;
+row-gap: 5%; */
+}
+
+.about-ecotourism-img{
+width: 20rem;
+height: 25rem;
+cursor: pointer;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+
+}
+.about-ecotourism-img:hover{
+  width: 21rem;
+  height: 21rem;
+}
+.about-ecotourism-tex{
+width: 100%;
+height: 100%;
+display: flex;
+align-items:center;
+justify-content: space-between;
+text-align: justify;
+flex-direction: row;
+gap: 3%;
+/* margin-left: auto;
+margin-right: auto; */
+}
+
+.about-ecotourism-tex h2{
+  width: calc(100%/3);
+  
+  } 
+
+.about-ecotourism-tex p{
+display: table-column;
+width: calc(100%);
+text-align: left;
+font-size: 1.25rem;
+}
+
+
+
+
+.about-ecotourism-more{
+    font-size: 1.3rem;
+    color: #000000;
+    transition: .2s linear;
+    text-decoration-line: underline;
+    font-weight:normal;
+    height: 10%;
+    width: 30%;
+    text-align: left;
+    justify-content: flex-start;  
+
+}
+
+.about-ecotourism-more:hover{
+  cursor: pointer;
+    background:#ffffffab;
+    height: 20%;
+    width:25%;
+    cursor: pointer;
+
+}
+
+.ecop{
+  display: grid;
+  width: 100%;
+  transition: opacity 1s;
+
+}
+
+.ecop:nth-child(1) {
+  transition-delay: 0.5s;
+}
+
+.more .ecog {
+  font-size: 1.3rem;
+  color: #000000;
+  transition: .2s linear;
+  /* text-decoration-line: underline; */
+  font-weight:normal;
+  height: 10%;
+  width: 15%;
+  /* text-align: left; */
+  display: flex;
+  justify-content: space-between;  
+  margin-left: 6%;
+  margin-top: 1%;
+}
+
+
+/* Description end */
+
+/* Destination start */
+
+.main-container {
+  width: 100%;
+  padding-top: 7%;
+  /* margin: 40px auto; */
+  overflow: hidden;
+  /* border-bottom: 3px solid #B59C7D; */
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+}
+
+/* .video-container .hover-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% - 24px), -50%);
+  background: #b59c7d8f;
+  color: #fff;
+  padding: 8px 16px;
+  pointer-events: none;
+  opacity: 0;
+  letter-spacing: 0.8px;
+  transition: all 400ms ease;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  grid-template-columns: 50%;
+} */
+
+/* #vidhover{
+  color: #fff;
+  text-align: center;
+  font-size:18px;
+  width: calc(100% / 3);
+} */
+
+
+
+/* .video-container .hover-text.active {
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  
+} */
+
+.video-description {
+  padding: 16px;
+  color: #000000;
+  text-align: left;
+  font-size:18px;
+  text-decoration: none;
+
+}
+
+.destbtn{
+  /* margin-left: -7%; */
+  margin-top: 0;
+      font-size: 1.3rem;
+      color: #000000;
+      transition: .2s linear;
+      text-decoration-line: underline;
+      font-weight:normal;
+      height: 10%;
+      width: 30%;
+      text-align: left;
+      justify-content: flex-start; 
+      /* background:#b59c7da6;  */
+  }
+
+  /* .destbtn:hover{
+    background:#ffffffab;
+    height: 20%;
+    width:25%;
+    cursor: pointer;
+  } */
+
+  .video-container {
+    position: relative; 
+  }
+  
+  /* .hover-text.active {
+    position: absolute; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    color: white; 
+  } */
+
+  #getb{
+    /* top: 50%;  */
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: justify;
+    line-height: 50px;
+    background: #C79230;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23); 
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    margin-top: 1.5%;
+    display: flex;
+    
+  }
+
+#get{
+  font-size: 1.3rem;
+  color: #000000;
+  transition: .2s linear;
+  /* text-decoration-line: underline; */
+  font-weight:normal;
+  height: 10%;
+  width: 15%;
+  text-align: left;
+  justify-content: flex-start;  
+  margin-left: -25%;
+  margin-top: 1%;
+  
+  
+}
+
+#g{
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  justify-items: center;
+
+}
+
+  
+
+/* Destination end */
+
+/* Event start */
+
+.wrapper {
+  
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 18%;
+  display: flex;
+  justify-content: space-between; 
+
+}
+
+
+.wrapper i {
+  top: 50%; 
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: justify;
+  line-height: 50px;
+  background: #C79230;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23); 
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+
+#left{
+
+margin-left: 24%;
+
+}
+
+#left img{
+
+width: 3rem;
+height: 3rem;
+
+}
+
+#left h2{
+
+display: grid;
+justify-content: center;
+text-align: left;
+font-size: 3rem;
+color:#000000;
+text-decoration: none;
+font-style: normal;
+
+
+}
+
+#right img{
+
+  width: 3rem;
+  height: 3rem;
+  
+  }
+
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4));
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1%;
+  /* border-radius: 8px; */
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  width: 100%;
+  height: 100%;
+  margin-left: 2%;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  gap: 1%;
+}
+.carousel :where(.card, .img) {
+  display: grid;
+  justify-content: left;
+  align-items: left;
+
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  /* background: #B59C7D; */
+  cursor: pointer;
+  /* padding-bottom: 15px; */
+  flex-direction: column;
+  /* border-radius: 8px; */
+  display: grid;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  
+}
+.carousel .card .img {
+  /* background: #8B53FF; */
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50%; */
+
+}
+.card .img img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  /* border: 4px solid #B59C7D; */
+
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  /* margin: 30px 0 5px; */
+
+
+}
+.carousel .card span {
+  color: #000000;
+  font-size: 1rem;
+  margin-top: -5%;
+
+}
+
+
+/* Event end */
+
+
+/* Contact start */
+
+.line{
+  margin-top: 18%;
+  border-top: .5px solid #000000;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+
+}
+
+#Contact{
+
+color: #000000;
+margin-top: 6%;
+
+
+}
+
+
+.social{
+
+text-align: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+
+}
+
+#logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  gap: 2rem;
+  color: #fff;
+  
+}
+
+
+ 
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1;
+}
+
+#logo p {
+ font-size: 1.25rem;
+}
+
+#icon {
+
+width: 3rem;
+height: 3rem;
+text-decoration: none;
+
+
+
+}
+
+/* Contact end */
+
+/* Chat start */
+
+html {
+  scroll-behavior: smooth;
+ 
+}
+
+body {
+  margin: 0 auto;
+  background-color: #222;
+}
+
+.chat-bar-collapsible {
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.collapsible {
+  background-color: #000000;
+  color: #C79230;
+  cursor: pointer;
+  padding: 18px;
+  width: 350px;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  /* border-radius: 10px 10px 0px 0px; */
+  /* border: 3px solid white; */
+  border-bottom: none;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #C79230;
+}
+
+.full-chat-block {
+  width: 350px;
+  background: white;
+  text-align: center;
+  overflow: auto;
+  scrollbar-width: none;
+  height: max-content;
+  transition: max-height 0.2s ease-out;
+}
+
+.outer-container {
+  min-height: 500px;
+  bottom: 0%;
+  position: relative;
+}
+
+.chat-container {
+  max-height: 500px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  scroll-behavior: smooth;
+  hyphens: auto;
+}
+
+.chat-container::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-bar-input-block {
+  display: flex;
+  float: left;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  width: 25%;
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#chat-icon:hover {
+  opacity: .7;
+}
+
+/* Chat bubbles */
+
+#userInput {
+  width: 75%;
+
+}
+
+.input-box {
+  float: left;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #000;
+  background-color: white;
+  outline: none;
+
+}
+
+.userText {
+  color: white;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: right;
+  clear: both;
+}
+
+.userText span {
+  line-height: 1.5em;
+  display: inline-block;
+  background: #C79230;
+  padding: 10px;
+  border-radius: 8px;
+  border-bottom-right-radius: 2px;
+  max-width: 80%;
+  margin-right: 10px;
+  animation: floatup .5s forwards
+}
+
+.botText {
+  color: #000;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+}
+
+.botText span {
+  line-height: 1.5em;
+  display: inline-block;
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  border-bottom-left-radius: 2px;
+  max-width: 80%;
+  margin-left: 10px;
+  animation: floatup .5s forwards
+  
+}
+
+@keyframes floatup {
+  from {
+      transform: translateY(14px);
+      opacity: .0;
+  }
+  to {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .full-chat-block {
+      width: 100%;
+      border-radius: 0px;
+  }
+  .chat-bar-collapsible {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+  }
+  .collapsible {
+      width: 100%;
+      border: 0px;
+      border-top: 3px solid white;
+      border-radius: 0px;
+  }
+}
+
+
+
+/* Chat end */
+
+/* Media */
+
+@media screen and (max-width: 991px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .wrapper .carousel {
+    grid-auto-columns:100% ;
+}
+}
+
+@media screen and (max-width: 451px) {
+
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sec{
+    width: 100%;
+    height: 310vh;
+    position: relative;  
+    padding: 10%;
+    background: #C79230;
+    text-align: left;
+    
+  }
+
+
+  .about-ecotourism-tex{
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  .about-ecotourism-tex h2{
+    width: calc(100%);
+    
+    } 
+  
+  .about-ecotourism-tex p{
+  display: table-column;
+  width: calc(100%);
+  text-align: left;
+  font-size: 1.25rem;
+  }
+
+  .main-container {
+    width: 100%;
+    margin-top: 50%;
+    /* margin: 40px auto; */
+    overflow: hidden;
+    /* border-bottom: 3px solid #B59C7D; */
+  }
+  
+
+  .wrapper .carousel {
+    grid-auto-columns:100% ;
+}
+
+.about-ecotourism-tex{
+  width: 100%;
+  height: 100%;
+
+ 
+  
+  }
+
+  .main-container {
+  width: 100%;
+  padding-top: 30%;
+  /* margin: 40px auto; */
+  overflow: hidden;
+  /* border-bottom: 3px solid #B59C7D; */
+}
+
+.more{
+
+  display: flex;
+  align-content: center;
+}
+
+.more .ecog {
+
+  width: 50%;
+
+}
+
+#get{
+  display: flex;
+  align-content: center;
+  width: 50%;
+  margin-left: 1%;
+ 
+
+}
+
+.wrapper {
+  
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+
+}
+
+#left{
+
+  margin-left: -1.5%;
+  
+  }
+
+ 
+
+
+ 
+}
+
+
+
+
+
+

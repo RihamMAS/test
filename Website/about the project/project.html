@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Image Comparison Slider | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+  <link rel="icon" href="../logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+  <!-- Navbar start -->
+
+  <div id="starnav" class="starnav">
+
+    <ul>
+
+      <li><a href="D:\Riham\ITI\Project\ITI Project\Website\index.html">Home</a></li>
+      <li><a href="">About</a>
+        <ul class="uldropdown">
+          <li><a href="D:\Riham\ITI\Project\ITI Project\Website\about the project\project.html">The project</a></li>
+          <li><a href="D:\Riham\ITI\Project\ITI Project\Website\about the team\team.html">The team</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="D:\Riham\ITI\Project\ITI Project\Website\project_final_ filter\template.html">Destination</a></li>
+      <li><a href="D:\Riham\ITI\Project\ITI Project\Website\Statistics\statistics.html">Statistics</a>
+      </li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+
+    <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+
+    <!-- <script>
+      
+      let navbar = document.querySelector('starnav');
+
+      document.querySelector('#menu-btn').onclick = () =>{
+        starnav.classList.toggle('active');
+      }
+
+      window.onscroll = () =>{
+        starnav.classList.remove('active');
+      }
+
+      document.querySelectorAll('input[type="number"]').forEach(inputNumber => {
+        inputNumber.oninput = () =>{
+            if(inputNumber.value.length > inputNumber.maxLength) inputNumber.value = inputNumber.value.slice(0, inputNumber.maxLength);
+        };
+      });
+
+      AOS.init({
+        duration: 400,
+        delay: 200,
+      });
+
+
+    </script> -->
+
+  </div>
+
+  <!-- Navbar end -->
+
+  <!-- Description start -->
+
+  <div class="sec" id="sec">
+
+    <div class="about-ecotourism">
+      <a href="https://www.facebook.com/?locale=ar_AR"> </a>
+      <div class="about-ecotourism-tex">
+        <h2 class="">About <br>The <br> Project</h2>
+
+        <div class="ecop">
+          <p class="">
+            Tourism in Egypt has brought economic benefits but has also harmed the environment and contributed to
+            climate change, impacting natural resources and biodiversity. With increasing awareness of environmental
+            concerns, there is a growing shift towards ecotourism, which prioritizes responsible and low-impact travel
+            to minimize environmental damage while offering authentic cultural experiences.</p>
+           
+        </div>
+
+
+
+      </div>
+
+          
+    </div>
+  </div>
+
+
+
+
+  <!-- Description end -->
+
+  <!-- Swip start -->
+
+  <div class="secc" id="secc">
+
+    <div class="about-ecotourism">
+      <a href="https://www.facebook.com/?locale=ar_AR"> </a>
+      <div class="about-ecotourism-tex">
+        <h2 class="">Impacts <br> of <br> Climate <br> Change </h2>
+
+        <div class="ecop">
+          <p class="">
+            Eco-tourism at Wadi El Rayyan Lake in Egypt provides an eye-opening experience, highlighting the effects of
+            climate change on this vital water resource. Travelers can witness firsthand the challenges faced by this
+            fragile ecosystem, emphasizing the importance of sustainable practices and conservation efforts in the face
+            of a changing climate.
+          </p>
+          <br>
+
+          <div class="wrapper">
+            <div class="images">
+              <div class="img-1"></div>
+              <div class="img-2"></div>
+            </div>
+            <div class="slider">
+              <div class="drag-line">
+                <span></span>
+              </div>
+              <input type="range" min="0" max="100" value="50">
+            </div>
+          </div>
+          <p> This Satellite swipe shows how water surface declined by 16% from 2000 to 2023.</p>
+
+
+
+          <script>
+            const slider = document.querySelector(".slider input");
+            const img = document.querySelector(".images .img-2");
+            const dragLine = document.querySelector(".slider .drag-line");
+            slider.oninput = () => {
+              let sliderVal = slider.value;
+              dragLine.style.left = sliderVal + "%";
+              img.style.width = sliderVal + "%";
+            }
+          </script>
+
+        </div>
+
+
+
+      </div>
+
+          
+    </div>
+  </div>
+
+
+  <!-- Swip end -->
+
+  <!-- Contact start -->
+
+  <div class="line">
+
+  </div>
+
+  <div id="Contact">
+
+    <div class="social">
+      <div id="logo">
+        <div class="logos">
+          <img src="../about the team/logo.png" alt="" id="logos">
+          <h1> Kemet </h1>
+        </div>
+        <div>
+          <p> Phone: +201000010000 </p>
+          <p> Email: Kemet@gmail.com </p>
+        </div>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/?locale=ar_AR" id="icon"> <img src="../about the team/facebook.png" alt="" id="icon"> </a>
+        <a href="https://www.instagram.com/" id="icon"> <img src="../about the team/instagram.png" alt="" id="icon"> </a>
+        <a href="https://www.youtube.com/" id="icon"> <img src="../about the team/youtube.png" alt="" id="icon"> </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact end -->
+
+</body>
+
+</html>

@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+
+*::-webkit-scrollbar{
+  height: .5rem;
+  width:.5rem;
+}
+
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color:#000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+
+}
+
+
+/* navbar start */
+
+#starnav{
+
+width: 100%;
+background-color: #C79230;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+}
+
+
+ #logos{
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+ }
+
+#starnav h3{
+  text-align: match-parent;
+  font-size: 1.3rem;
+  color: #fff;
+
+}
+
+ul{
+
+  margin-top: 0;
+  margin-left: 55%;
+  list-style: none;
+  color: #f9f9f9;
+ 
+}
+
+ul li{
+  display: inline-block;
+  position: relative;
+
+}
+ul li a{
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-align: match-parent;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+ul li ul.uldropdown li{
+  display: block;
+}
+
+ul li ul.uldropdown{
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  margin-left: 0;
+}
+ul li a:hover{
+  background:#c79230da;
+}
+ul li:hover ul.uldropdown{
+  display:block;
+}
+
+#menu-btn{
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--white);
+  display: none;
+}
+
+
+/* navbar end */
+
+/* Descrition start */
+
+.sec{
+
+  padding: 1%;
+  margin-top: -10%;
+  width: 100%;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    color:#000000;
+    display: flex;
+}
+
+
+.about-ecotourism{
+width: 100%;
+height: 90vh;
+text-align: center;
+align-items: center;
+gap: 3%;
+row-gap: 5%;
+}
+
+.about-ecotourism-tex{
+width: 72%;
+height: 100%;
+display: flex;
+align-items:center;
+justify-content: space-between;
+text-align: justify;
+flex-direction: row;
+gap: 3%;
+align-self: center;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.about-ecotourism-tex h2{
+  width: calc(100%/3);
+  
+  } 
+
+.about-ecotourism-tex p{
+display: table-column;
+width: calc(100%);
+text-align: left;
+font-size: 1.25rem;
+}
+
+
+
+.ecop{
+  display: grid;
+  width: 100%;
+
+}
+
+
+
+/* Description end */
+
+
+
+
+
+/* Swip start */
+
+.secc{
+
+  padding: 1%;
+  margin-top: -15%;
+  margin-bottom: 3%;
+  width: 100%;
+  height: 100%;
+}
+
+.secc h2{
+    font-size: 3.5em;
+    color:#000000;
+    display: flex;
+}
+
+
+.wrapper{
+  position: relative;
+  height: 500px;
+  width: 750px;
+  overflow: hidden;
+  background: #fff;
+  border: 7px solid #fff;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+}
+.wrapper .images{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.wrapper .images .img-1{
+  height: 100%;
+  width: 100%;
+  background: url("./images/Map2023.png") no-repeat;
+  /* background: url("images/car.jpg") no-repeat; */
+}
+.wrapper .images .img-2{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  /* filter: blur(5px); */
+  background: url("./images/Map2000.png") no-repeat;
+  /* background: url("images/car.png") no-repeat; */
+}
+.wrapper .slider{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.wrapper .slider input{
+  width: 100%;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+}
+.slider input::-webkit-slider-thumb{
+  height: 486px;
+  width: 3px;
+  background: none;
+  -webkit-appearance: none;
+  cursor: col-resize;
+}
+.slider .drag-line{
+  width: 3px;
+  height: 486px;
+  position: absolute;
+  left: 49.85%;
+  pointer-events: none;
+}
+.slider .drag-line::before,
+.slider .drag-line::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 222px;
+  background: #fff;
+}
+.slider .drag-line::before{
+  top: 0;
+}
+.slider .drag-line::after{
+  bottom: 0;
+}
+.slider .drag-line span{
+  height: 42px;
+  width: 42px;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider .drag-line span::before,
+.slider .drag-line span::after{
+  position: absolute;
+  content: "";
+  top: 50%;
+  border: 10px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.slider .drag-line span::before{
+  left: 40%;
+  border-left-color: #fff;
+}
+.slider .drag-line span::after{
+  left: 60%;
+  border-top-color: #fff;
+}
+
+/* Swip end */
+
+
+/* Contact start */
+
+
+#Contact{
+  height: 20vh;
+  width: 100%;
+  position: relative;  
+  background: #C79230;
+  /* text-align: left; */
+  color: #000000;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.social{
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+ 
+
+}
+
+#logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  gap: 2rem;
+  color: #fff;
+  
+  
+}
+
+
+ 
+.logos {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1;
+}
+
+
+
+#logo p {
+ font-size: 1.25rem;
+ color: #000000;
+ 
+}
+
+#icon {
+
+width: 3rem;
+height: 3rem;
+text-decoration: none;
+
+
+
+
+}
+
+/* Contact end */
+
+
+
+
+
+
+
+
+/* media */
+
+@media (max-width:768px){
+
+  #menu-btn{
+     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .wrapper .carousel {
+    grid-auto-columns:100% ;
+}
+
+.about-ecotourism-tex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  }
+
+  .about-ecotourism-tex h2{
+    width: calc(100%);
+    text-align: center;
+    
+    } 
+
+  .main-container {
+  width: 100%;
+  padding-top: 30%;
+  /* margin: 40px auto; */
+  overflow: hidden;
+  /* border-bottom: 3px solid #B59C7D; */
+}
+
+.wrapper {
+  
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+
+}
+
+
+  .sec{
+    width: 100%;
+    height: 200vh;
+    position: relative;  
+    padding: 10%;
+    background: #C79230;
+    text-align: left;
+    /* align-items: center; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns:100% ;
+}
+}
+
+

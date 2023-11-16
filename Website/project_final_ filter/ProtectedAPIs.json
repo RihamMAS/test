@@ -1,0 +1,261 @@
+[
+  {
+    "name": "Wadi El Rayan",
+    "discription":"Wadi El-Rayan Protected Area has been declared by prime-ministerial decree and is directed by the Nature Conservation Sector (NCS) of the Egyptian Environmental  ffairs Agency (EEAA). The overall management goal of the protected area is the protection of the natural resources in accordance with the declaration decree of the protected area.",
+    "img": "img/310725_445475628871991_1903874467_n.webp",
+    "importance1":"Sandboarding",
+    "importance2":"Wild Animals" ,
+    "importance3":"Camping"
+  },
+  {
+    "name": "Ras Mohammed",
+    "discription":"characterized by its integrated desert environment, consisting of sand dunes, natural springs, large water bodies and a different botanical life, different wild animals and important and various sea fossils.",
+    "img": "",
+    "importance1":"Costal Area",
+    "importance2":"Hiking" ,
+    "importance3":"Pird Area"
+
+  },
+  {
+    "name": "Zaranik",
+"discription":"Zaraniq  and El Bardwaeel Marsh Protected Area has been declared by prime-ministerial in 1985 and is directed by the Nature Conservation Sector (NCS) of the Egyptian Environmental ffairs Agency (EEAA). A land-water reserve and a natural sanctuary for birds",
+"img": "",
+"importance1":"Pird Area",
+"importance2":"Wild Animals" ,
+"importance3":"Natural Area"
+
+  },
+  {
+    "name": "El Ahrash",
+"discription":"Ahrash Protected Area has been declared by prime-ministerial in 1985 and is directed by the Nature Conservation Sector (NCS) of the Egyptian Environmental ffairs Agency (EEAA). thsi area is cosidered Resource development reserve",
+"img": "",
+"importance1":"Natural Area",
+"importance2":"Wild plants" ,
+"importance3":"Costal Area"
+
+  },
+  {
+    "name": "Elba",
+"discription":"Elba natural protected Area is located in the southern eastern part of the eastern desert. Its mountains are located on the joint borders of Egypt and the Sudan on the Red Sea.",
+"img": "",
+"importance1":"Hiking",
+"importance2":"Costal Area" ,
+"importance3":"Wild plants"
+
+  },
+  {
+    "name": "Qarun",
+    "discription":"It is one of the ancient natural lakes in the world. It is the remaining part of the ancient Morris lake.",
+    "img": "",
+    "importance1":"Wild Animals",
+    "importance2":"Fossil Area" ,
+    "importance3":"historical monuments"
+  
+  },
+  {
+    "name": "El Omayed",
+    "discription":"Elomayed Natural Protected Area has been declared by prime-ministerial in 1986 and is directed by the Nature Conservation Sector (NCS) of the Egyptian Environmental ffairs Agency (EEAA). This area is cosidered Desert and biosphere reserve",
+    "img": "",
+    "importance1":"Wild plants",
+    "importance2":"Wild Animals" ,
+    "importance3":"Natural Area"
+   
+  },
+  {
+    "name": "Salouga and Ghazal",
+    "discription":"Saloga and Ghazal Protected Areas locate in Aswan.Area has been declared by prime-ministerial in 1986",
+    "img": "",
+    "importance1":"Wild plants",
+    "importance2":"Pird Area" ,
+    "importance3":"Natural Area"
+    
+  },
+  {
+    "name": "Ashtum El Gamel",
+    "discription":"The protected Area includes the bays of El Gamil and Ashtoon El Gamil and Al Manzala lagoon",
+    "img": "",
+    "importance1":"Natural Area",
+    "importance2":"Wild plants" ,
+    "importance3":"Costal Area"
+  
+  },
+  {
+    "name": "St. Catherine",
+    "discription":" This area is cosidered a World cultural and Natural heritage protected area.",
+    "img": "",
+    "importance1":"Hiking",
+    "importance2":"Wild Animals" ,
+    "importance3":"Camping"
+    },
+  {
+    "name": "Petrified Forest",
+    "discription":" This area is located in Maadi in Cairo governate. this area is geological protected area and a national heritage.",
+    "img": "",
+    "importance1":"Wild plants",
+    "importance2":"Natural Area" ,
+    "importance3":"Fossil area"
+  
+  },
+  {
+    "name": "Wadi El Assuti",
+    "discription":"This area is located in Asiout Governorate.Is cosidered captive and multipurpose protected area",
+    "img": "",
+    "importance1":"Wild Animals",
+    "importance2":"Wild plants" ,
+    "importance3":"Natural Area"
+   
+  },
+  
+  {
+    "name": "Hasana Dome",
+    "discription":"Hassana Dome protected Area is a museum and specialized scientific institute that helps in studying geology and different geological formations",
+    "img": "",
+    "importance1":"Fossil area",
+    "importance2":"historical monuments" ,
+    "importance3":"Costal Area"
+   
+  }
+,
+  {
+    "name": "Wadi Sannur Cave",
+    "discription":"Hassana Dome protected Area is Geological protected area and national heritage",
+    "img": "",
+    "importance1":"Fossil area",
+    "importance2":"Natural Area" ,
+    "importance3":"Wild plants"
+   
+  },
+  {
+    "name": "Nabq",
+    "discription":"Nabq Protected Area located in South Sinai and is considered as Multipurpose protected area",
+    "img": "",
+    "importance1":"Wild plants",
+    "importance2":"Wild Animals" ,
+    "importance3":"Natural Area"
+   
+  },
+  {
+    "name":"Abu Gallum",
+    "discription" : "landscape protected area, The mountains are near the beaches and include various environmental systems of coral reefs, sea creatures, sea herbs, lagoons, mountain and desert environment systems. " ,
+    "img" :"",
+    "importance1":"Natural Area",
+    "importance2":"Costal Area",
+    "importance3":"Wild Animals"
+ 
+}
+,
+  {
+    "name":"El Bourollus",
+    "discription":"Date of Announcement: 1998 Area: 460 Km 2 Type: wetlands protected areaType: wetlands protected area",
+    "img" :"",
+    "importance1":"Natural Area",
+    "importance2":"Pird Area",
+    "importance3":"Wild plants"
+    
+  },
+  
+  {
+    "name":"Taba",
+    "discription":"The area is characterized by its distinguished Geological formations and monument sites, as well the rare wild life and nice scenery and traditional heritage of nomads supports wild life like deer, large birds including bustard. ",
+    "img" :"",
+    "importance1":"Wild Animals",
+    "importance2":"Wild plants",
+    "importance3":"Natural Area"
+   
+  },
+  
+  { 
+    "name":"White Desert",
+    "discription":"Date of Announcement: 2002 Area: 3010 Km 2  Type: Desert and landscape protected area Distance from Cairo: 570 Km" ,
+    "img" :"",
+    "importance1":"Fossil area",
+    "importance2":"historical monuments",
+    "importance3":"Natural Area"
+  
+  },
+  
+  {
+    "name":"Wadi El-Gemal - Hamata",
+    "discription":"Date of Announcement: 2003 Area: 7450 Km 2  Type: Desert protected area Distance from Cairo: 850 Km The Protected Area encompasses the segment of the Red Sea coastal plain and mountains extending and between the Red Sea shoreline in the east to (the Sheikh Shazli road).",
+    "img" :"",
+    "importance1":"Costal Area",
+    "importance2":"Wild plants",
+    "importance3":"Natural Area"
+   
+  },
+  
+  {
+    "name":"El-Gelf El-Keber",
+    "discription":"Date of Announcement: 2007 Area: 48523 Km 2  Type: Natural and Cultural National Park Protected Area It is also here that you will find the famous Cave of Swimmers, which contains wall drawings and carvings estimated to have been made during the Neolithic era, around 8,000 years ago.",
+    "img" :"",
+    "importance1":"Fossil area",
+    "importance2":"historical monuments",
+    "importance3":"Natural Area"
+    
+  },
+  
+  {
+    "name":"El-Salum",
+    "discription":"Date of Announcement: 2010. Area: 383 Km 2 . Type: Marine protected area. It is assumed to be one of the major areas which contain a diversity of fish. In addition, there are some geographical features which include tidal zone, dunes of sand, salt depressions and cliffs.",
+    "img" :"",
+    "importance1":"Costal Area",
+    "importance2":"Sandboarding",
+    "importance3":"Wild plants"
+   
+  },
+  
+  {
+    "name":"Dababia",
+    "discription":"Date of Announcement: 2007 Area: 1 Km 2  Type: Geological protected area",
+     "img" :"",
+    "importance1":"Fossil area",
+    "importance2":"historical monuments",
+    "importance3":"Natural Area"
+    
+  },
+  {
+    "name":"Wadi Al Alaqi",
+    "discription":"Date of Announcement: 1989 Area: 30000 Km 2  Type: Desert Protected Area and Biosphere Reserve Distance from Cairo: 950 Km",
+     "img" :"",
+    "importance1":"Wild Animals",
+    "importance2":"Wild plants",
+    "importance3":"Natural Area"
+   
+  },
+  {
+    "name":"Red Sea Islands",
+    "discription":"Date of Announcement: 2006 Area: 1991 Km 2  Type: Developing resources protected area",
+     "img" :"",
+    "importance1":"Costal Area",
+    "importance2":"Pird Area",
+    "importance3":"Wild plants"
+   
+  },
+  {
+    "name":"El-Wahat El-Bahreya",
+    "discription":"Date of Announcement: 2010 Area: 109 Km 2  Type: Natural Heritage protected area Distance from Cairo: 370 km",
+     "img" :"",
+    "importance1":"Wild Animals",
+    "importance2":"Wild plants",
+    "importance3":"Natural Area"
+  },
+  {
+    "name":"Siwa",
+    "discription":"Siwa oasis is full of olive and palm trees. As well as, hot and cold water springs that have healing properties and detoxifying benefits",
+     "img" :"",
+    "importance1":"Natural Area",
+    "importance2":"historical monuments",
+    "importance3":"Wild plants"
+   
+  },
+  {
+    "name":"Wadi Degla",
+    "discription":"Wadi Degla is one of the important valleys It passes through the limestone rocks that had remained in the marine environment during the Eocene Epoch in the eastern desert (60 million years).",
+     "img" :"",
+    "importance1":"Camping",
+    "importance2":"Wild Animals",
+    "importance3":"Natural Area"
+    
+  }
+ 
+]
